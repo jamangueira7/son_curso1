@@ -16,6 +16,7 @@ def make_money_slips(mode):
     print('Cedulas gravadas com sucesso!')
 
 def make_bank_accounts(mode):
+
     file = open_file_bank(mode)
     write_bank_accounts(file)
     file.close()
