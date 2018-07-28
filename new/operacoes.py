@@ -10,6 +10,7 @@ def sacar(valor, conta_inicial):
     if dados_banco.lista_contas[conta_inicial]['valor'] >= valor:
         dados_banco.lista_contas[conta_inicial]['valor'] -= valor
         print("Saque realizado no valor de R$%s" %valor)
+        arquivo.salvar_operacoes_contas()
         mostrar_saldo()
     else:
         print("Operação não realizada: Valor insuficiente")

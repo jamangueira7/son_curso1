@@ -16,7 +16,7 @@ def main():
 
     elif opcao_inicial == '2':
         # OPÇÃO DEPOSITO SEM LOGAR
-        return funcoes.fazer_deposito(opcao_inicial)
+        return funcoes.fazer_deposito()
 
     else:
         return funcoes.sair()

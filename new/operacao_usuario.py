@@ -15,6 +15,7 @@ def identificar_usuario():
     print("Usuario logado: %s" %(usuario_logado[0]['nome']))
 
 def deslogar_usuario():
+    usuario_logado.clear()
     arquivo.apagar_usuario_logado()
 
 def mostrar_usuario_logado():
